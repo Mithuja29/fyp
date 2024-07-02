@@ -1,0 +1,21 @@
+unclosed_bracket:
+public class Main { public static void main(String[] args) { System.out.println('Hello, World'); }
+
+
+No error:
+public class Main { public static void main(String[] args) { System.out.println('Hello, World');} }
+
+
+unclosed_bracket_in_array_declaration:
+public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 }; }
+
+
+unclosed_double_quote:
+public class Main { public static void main(String[] args) { System.out.println("Hello, World'); } }
+
+
+unclosed_parenthesis:
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x; } }
+
+
+ 

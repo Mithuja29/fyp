@@ -1,0 +1,65 @@
+sampleCode,typeofError
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); }",unclosed_bracket
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World');} }",No_Error
+"public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 }; }",unclosed_bracket_in_array_declaration
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World"" } }",unclosed_double_quote
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x; } },unclosed_parenthesis
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x); } },extra_semicolon
+"public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 } } }",missing_comma
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World');",missing_semicolon
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World); } }",unclosed_quote_in_print_statement
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World); } }",unclosed_single_quote
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World'); } }",unclosed_double_quote
+"public class Main { public static void main(String[ args) { System.out.println('Hello, World'); } }",unclosed_bracket_in_method_parameter
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World');",missing_semicolon
+public class Main { public static void main(String[] args) { int x = 10 System.out.println(x); } },missing_semicolon
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World' } }",unclosed_quote
+"public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 };",missing_bracket
+public class Main { public static void main(String[] args) { int x = (10 * 5); System.out.println(x); } },No_Error
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World""); } }",No_Error
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",No_Error
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World); } }",unclosed_quote_in_print_statement
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",No_Error
+"public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 }; } }",unclosed_bracket_in_array_declaration
+public class Main { public static void main(String[] args) { int x = (10 * 5; System.out.println(x); } },unclosed_parenthesis
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x; } },unclosed_parenthesis
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x); } },extra_semicolon
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",missing_semicolon
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World');} }",No_Error
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World""); } }",unclosed_quote_in_print_statement
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World); } }",unclosed_quote_in_print_statement
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",unclosed_bracket_in_method_parameter
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World', 'Goodbye'); } }",missing_comma
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",missing_semicolon
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x); } },missing_semicolon
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x; } },unclosed_parenthesis
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World');} }",No_Error
+"public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 }; }",unclosed_bracket_in_array_declaration
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World"" } }",unclosed_double_quote
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x; } },unclosed_parenthesis
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x); } },extra_semicolon
+"public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 } } }",missing_comma
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World');",missing_semicolon
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World); } }",unclosed_quote_in_print_statement
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World); } }",unclosed_single_quote
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World'); } }",unclosed_double_quote
+"public class Main { public static void main(String[ args) { System.out.println('Hello, World'); } }",unclosed_bracket_in_method_parameter
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World');",missing_semicolon
+public class Main { public static void main(String[] args) { int x = 10 System.out.println(x); } },missing_semicolon
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World' } }",unclosed_quote
+"public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 };",missing_bracket
+public class Main { public static void main(String[] args) { int x = (10 * 5); System.out.println(x); } },No_Error
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World""); } }",No_Error
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",No_Error
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World); } }",unclosed_quote_in_print_statement
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",No_Error
+"public class Main { public static void main(String[] args) { int[] arr = {1, 2, 3, 4, 5 }; } }",unclosed_bracket_in_array_declaration
+public class Main { public static void main(String[] args) { int x = (10 * 5; System.out.println(x); } },unclosed_parenthesis
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x; } },unclosed_parenthesis
+public class Main { public static void main(String[] args) { int x = 10; System.out.println(x); } },extra_semicolon
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",missing_semicolon
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World');} }",No_Error
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World""); } }",unclosed_quote_in_print_statement
+"public class Main { public static void main(String[] args) { System.out.println(""Hello, World); } }",unclosed_quote_in_print_statement
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World'); } }",unclosed_bracket_in_method_parameter
+"public class Main { public static void main(String[] args) { System.out.println('Hello, World', 'Goodbye'); } }",missing_comma

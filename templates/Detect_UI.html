@@ -1,0 +1,75 @@
+{% extends 'holder.html' %}
+{% block content %}
+
+<div class="row">
+  <div class="col-12">
+
+    <div class="card my-4">
+      <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+        <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+          <h6 class="text-white text-capitalize ps-3">Java Syntax Error Detection [Enter Your Code Below:]</h6>
+        </div>
+      </div>
+
+      <div class="card-body px-0 pb-2">
+        <div class="col-xl-12 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5">
+          <div class="card card-plain">
+            <div class="card-body">
+              {% if message %}
+                <div class="alert alert-{{ message['status'] }}" role="alert">
+                  {{ message['text'] }}
+                </div>
+              {% endif %}
+
+              <form id="codeForm" role="form">
+                <div class="input-group input-group-outline mb-3">
+                  <textarea id="code" class="form-control" name="code" rows="10" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Check for Errors</button>
+                </div>
+              </form>
+
+              <br>
+              <div class="card mt-4" id="resultCard" style="display: none;">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Result</h5>
+                  <br/>
+                  <div id="result" class="bg-primary text-white p-3 rounded"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('codeForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    let code = document.getElementById('code').value;
+
+    fetch('/predict_Error', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `code=${encodeURIComponent(code)}`
+    })
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('result').innerText = `Predicted As : ${data.error_type}`;
+      document.getElementById('resultCard').style.display = 'block';
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      document.getElementById('result').innerText = 'Error predicting the error type.';
+      document.getElementById('resultCard').style.display = 'none';
+    });
+  });
+</script>
+
+{% endblock %}
